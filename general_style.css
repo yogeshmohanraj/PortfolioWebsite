@@ -37,12 +37,6 @@ body {
 	overflow: hidden;
 }
 
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
 .top_nav::after {
 	content: "";
 	display: table;
