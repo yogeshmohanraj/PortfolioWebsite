@@ -1,0 +1,13 @@
+.headshot {
+	height: 250px;
+	width: 370px;
+
+	border-radius: 50%;
+	border-style: solid;
+	border-color: rgb(0, 0, 0, 0.8);
+	border-width: 8px;
+
+	position: relative;
+	left: 40px;
+	top: 40px;
+}
