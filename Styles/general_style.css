@@ -1,7 +1,7 @@
 /* define fonts */
 @font-face {
 	font-family: "headerFont";
-	src: url("Fonts/raleway_thin-webfont.woff") format('woff');
+	src: url("../Fonts/raleway_thin-webfont.woff") format('woff');
 }
 
 /* HTML */
@@ -11,10 +11,9 @@ html {
 
 /* Body */
 body {
-	background-image: url("Images/white_background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	
+	background-attachment: fixed;
 	height: 100%;
 	margin: 0;
 }
@@ -22,11 +21,9 @@ body {
 /* Navigation Bar */
 .top_nav {
 	background-color: rgb(0, 0, 0, 0.8);
-
 	padding-left: 20px;
 	padding-right: 20px;
 	max-height: 50px;
-
 	overflow: hidden;
 }
 
@@ -40,7 +37,6 @@ body {
 	float: left;
 	padding-top: 12px;
 	padding-bottom: 10px;
-
 	font-family: headerFont;
 	font-size: 30px;
 	text-decoration: none;
@@ -57,67 +53,58 @@ body {
 	color: #FFD700;
 }
 
-.top_nav nav {
-	float: right;
-}
-
-.top_nav nav ul {
+.top_nav ul {
+	float:right;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
 	font-family: headerFont;
 	font-size: 12px;
 	font-weight: 100;
 }
 
-.top_nav nav li {
+.top_nav li {
 	display: inline-block;
 	margin-left: 40px;
 	padding-top: 20px;
 	padding-bottom: 18px;
-
 	position: relative;
 }
 
-.top_nav nav ul li a {
+.top_nav ul li a {
 	color: white;
 	text-decoration: none;
 }
 
-.top_nav nav ul li a.active {
+.top_nav ul li a.active {
 	color: #FFD700;
 }
 
-.top_nav nav ul li a.active::before {
+.top_nav ul li a.active::before {
 	content: "";
 	display: block;
 	height: 2px;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-
 	background-color: #FFD700;
 }
 
-.top_nav nav ul li a:hover {
+.top_nav ul li a:hover {
 	color: #FFD700;
 }
 
-.top_nav nav ul li a::before {
+.top_nav ul li a::before {
 	content: "";
 	display: block;
 	height: 2px;
 	width: 0%;
 	position: absolute;
 	bottom: 0;
-
 	background-color: #FFD700;
-
 	transition: all ease-in-out 200ms;
 }
 
-.top_nav nav ul li a:hover::before {
+.top_nav ul li a:hover::before {
 	width: 100%;
 }
-

@@ -1,0 +1,16 @@
+/* Bootstrap Overrides */
+.top_nav .logo {
+	padding-top: 5px;
+	padding-bottom: 30px;
+	padding-bottom: 10px;
+}
+
+.top_nav ul li{
+	padding-top: 17px;
+	padding-bottom: 15px;
+}
+
+
+.top_nav .logo:hover {
+	text-decoration: none;
+}

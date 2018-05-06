@@ -1,0 +1,116 @@
+/* define fonts */
+@font-face {
+	font-family: "thinFont";
+	src: url("../Fonts/raleway_thin-webfont.woff") format('woff');
+}
+
+.resume_button {
+	text-align: center;
+	margin: 40px auto;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.resume_button button {
+	background-color: rgb(0, 0, 0, 0.7);
+	border: solid;
+	font-size: 18px;
+	font-family: 'Open Sans';
+	width: 100%;
+	text-align: center;
+	color: #F4F6F7;
+	border-color: black;
+	border-width: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	max-width: 875px;
+}
+
+.resume_button button:hover {
+	color: #FFD700;
+	background-color: rgb(0, 0, 0, 0.6);
+}
+
+.resume_button button:active {
+	background-color: rgb(0, 0, 0, 0.4);
+	color: #FFD700;
+	border-color: black;
+}
+
+.container {
+	margin: 30px auto;
+	text-align: center;
+	max-width: 900px;
+}
+
+/* less than 800px */
+@media screen and (max-width: 625px) {
+	.card-columns {
+		column-count: 1;
+	}
+}
+
+/* more than 800px */
+@media screen and (min-width: 625px) {
+	.card-columns {
+		column-count: 2;
+	}
+}
+
+.card {
+	display: inline-block;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 6px;
+	max-width: 425px;
+}
+
+.card-header {
+	background-color: rgb(0, 0, 0, 0.7);
+	border-bottom: solid #FFD700 1px;
+	font-family: thinFont;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	color: #FFD700;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.card-body {
+	background-color: rgb(0, 0, 0, 0.2);
+	color: rgb(0, 0, 0.1);
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+.card-title {
+	font-size: 18px;
+	padding-bottom: 2px;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+.card-subtitle {
+	line-height: 14px;
+	color: black;
+	font-size: 12px;
+	font-weight: 400;
+	padding-bottom: 7px;
+}
+
+.info {
+	list-style-type: square;
+	font-size: 12px;
+	line-height: 15px;
+	padding-left: 17px;
+	margin-bottom: 0px;
+}
+
+li {
+	padding: 3px;
+}
