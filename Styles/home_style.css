@@ -43,7 +43,6 @@ body{
 
 .headshot img:hover {
 	border-color: #FFD700;
-	transition: all ease-in-out 100ms;
 }
 
 .tagline {
