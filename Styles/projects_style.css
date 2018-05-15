@@ -3,7 +3,7 @@
 	background-color: rgb(0, 0, 0, 0.7);
 	color: #F4F6F7;
 	font-family: 'Open Sans';
-	font-size: 20px;
+	font-size: 35px;
 	font-weight: 200;
 	padding-top: 10px;
 	padding-left: 30px;
@@ -15,6 +15,11 @@
 	border-style: solid;
 	border-width: 3px;
 	border-color: black;
+	line-height: 5px;
+}
+
+.subheading {
+	font-size: 10px;
 }
 
 .timeline ul {
@@ -46,11 +51,6 @@
   background: inherit;
 }
 
-.timeline ul li:hover::after {
-  border-color: #FFD700;
-
-}
-
 .timeline ul li div {
   position: relative;
   bottom: 0;
@@ -62,6 +62,12 @@
   font-weight: 300;
   font-size: 14px;
   border-radius: 5px;
+}
+
+.selected_card {
+	border-style: solid !important;
+	border-color: #FFD700 !important;
+	font-size: 30px !important;
 }
  
 .timeline ul li div::before {

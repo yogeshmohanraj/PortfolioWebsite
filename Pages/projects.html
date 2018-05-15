@@ -2,10 +2,15 @@
 <html>
 <head>
 	<title>Yogesh Mohanraj</title>
+
+	<!--Stylesheets-->
 	<link rel="stylesheet" type="text/css" href="../Styles/general_style.css">
 	<link rel="stylesheet" type="text/css" href="../Styles/projects_style.css">
 
+	<!--Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+
 
 </head>
 <body>
@@ -24,78 +29,79 @@
 
 	<div class="title">
 		<p>PROJECTS TIMELINE</p>
+		<p class="subheading">CLICK ON THE CARDS TO LEARN MORE</p>
 	</div>
 
 	<div class="timeline">
 		<ul>
 			<li>
-				<div id="Card">
+				<div class="card" onclick="select_card(1)">
 					<time>2014</time> 
 					AP Java Project: created a simple side scrolling game
 				</div>
 			</li>
 			<li>
-				<div id="Card">
+				<div class="card" onclick="select_card(2)">
 					<time> 2016</time> 
 					Euchre Project: learned about inheritance
 				</div>
 			</li>
 			<li>
-				<div id="Card">
+				<div class="card" onclick="select_card(3)">
 					<time>2017</time> 
 					Personal website: this is the website you are currently 
 				</div>
 			</li>
 			<li>
-				<div id="Card">
+				<div class="card" onclick="select_card(4)">
 					<time>2014</time> 
 					AP Java Project: created a simple side scrolling game
 				</div>
 			</li>
 			<li>
-				<div id="Card">
+				<div class="card" onclick="select_card(5)">
 					<time>2016</time> 
 					Euchre Project: learned about inheritance
 				</div>
 			</li>
 			<li>
-				<div>
+				<div class="card" onclick="select_card(6)">
 					<time>2017</time> 
 					Personal website: this is the website you are currently 
 				</div>
 			</li>
 			<li>
-				<div>
+				<div class="card" onclick="select_card(7)">
 					<time>2014</time> 
 					AP Java Project: created a simple side scrolling game
 				</div>
 			</li>
 			<li>
-				<div>
+				<div class="card" onclick="select_card(8)">
 					<time>2016</time> 
 					Euchre Project: learned about inheritance
 				</div>
 			</li>
 			<li>
-				<div>
+				<div class="card" onclick="select_card(9)">
 					<time>2017</time> 
 					Personal website: this is the website you are currently 
 				</div>
 			</li>
 			<li>
-				<div>
+				<div class="card" onclick="select_card(10)">
 					<time>2014</time> 
 					AP Java Project: created a simple side scrolling game
 				</div>
 			</li>
 			<li>
-				<div>
+				<div class="card" onclick="select_card(11)">
 					<time>2016</time> 
 					Euchre Project: learned about inheritance
 				</div>
 			</li>
 			<li>
-				<div>
+				<div class="card" onclick="select_card(12)">
 					<time>2017</time> 
 					Personal website: this is the website you are currently 
 				</div>
@@ -103,40 +109,10 @@
 		</ul>
 	</div>
 
-	<script>
-		function colorBorder() {
-			var d = document.getElementById
-		}
-	</script>
-
-	<script>
-		var items = document.querySelectorAll(".timeline li");
-
- 		function isElementInViewport(el) {
-  			var rect = el.getBoundingClientRect();
-  				return (
-    				rect.top >= 0 &&
-    				rect.left >= 0 &&
-    				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  				);
-		}
- 
-		function callbackFunc() {
- 			for (var i = 0; i < items.length; i++) {
-    			if (isElementInViewport(items[i])) {
-      				items[i].classList.add("in-view");
-    			}
-  			}
-		}
- 
-		window.addEventListener("load", callbackFunc);
-		window.addEventListener("scroll", callbackFunc);
-	</script>
-
-
-	<!--Particles-->
 	<div id="particles-js"></div>
+
+	<!--Scripts-->
+	<script type="text/javascript" src="../Scripts/projects_scripts.js"></script>
 	<script src="../Particles/particles.js"></script>
 	<script src="../Particles/app.js"></script>
 
