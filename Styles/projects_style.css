@@ -1,13 +1,13 @@
 .title {
 	text-align: center;
-	background-color: rgb(0, 0, 0, 0.7);
+	background-color: #494949;
 	color: #F4F6F7;
 	font-family: 'Open Sans';
 	font-size: 35px;
 	font-weight: 200;
 	padding-top: 10px;
 	padding-left: 30px;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-top: 30px;
@@ -15,7 +15,7 @@
 	border-style: solid;
 	border-width: 3px;
 	border-color: black;
-	line-height: 5px;
+	line-height: 40px;
 }
 
 .subheading {
@@ -62,12 +62,9 @@
   font-weight: 300;
   font-size: 14px;
   border-radius: 5px;
-}
-
-.selected_card {
-	border-style: solid !important;
-	border-color: #FFD700 !important;
-	font-size: 30px !important;
+  border-style: solid;
+  border-color: #FFD700;
+  border-width: 1px;
 }
  
 .timeline ul li div::before {
@@ -77,6 +74,18 @@
   width: 0;
   height: 0;
   border-style: solid;
+}
+
+.selected_card {
+  border-style: solid !important;
+  border-color: black !important;
+  border-width: 3px !important;
+  background-color: #CCCCCC !important;
+  color: black !important;
+}
+
+.selected_card {
+
 }
 
 .timeline ul li:nth-child(odd) div {
@@ -90,7 +99,7 @@
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -465px;
+  left: -470px;
 }
  
 .timeline ul li:nth-child(even) div::before {
@@ -129,6 +138,65 @@
   transform: none;
   visibility: visible;
   opacity: 1;
+}
+
+.card_title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card1::after {   
+  display: block;
+  content: "I created and styled most of this website from scratch using HTML5, CSS, and JavaScript. "
+  "The responsive card system on the Resume page was created using bootstrap, "
+  "and the background is from Vincent Garreau's particles.js library. ";
+}
+
+.card2::after {
+  content: "This classifer uses a training set of data to calculate the "
+  "log-likehood value of each post label. "
+  "Using these values, it determines the predicted label for each post "
+  "in a new data set."
+  "In order to store the log-likehood values for each label and word combination, "
+  "I used a custom implentation of a Binary Search Tree. "
+  "The project is written in C++.";
+}
+
+.card3::after {
+  content: "The stack structure is derived from "
+  "a custom implementation of a doubly linked list. "
+  "The project is written in C++.";
+}
+
+.card4::after {
+  content: "This project utilizes dynamic types and polymorphism "
+  "to allow for the player type to be chosen at runtime. "
+  "Abstraction was heavily emphasized in this project, so I created seperate "
+  "classes for each element of the game. "
+  "The project is written in C++.";
+}
+
+.card5::after {
+  content: "The seam carving algorithm finds and removes seams containing the least "
+  "important pixels. In order to assure the code was working properly, I wrote "
+  "concise test cases for each class. "
+  "The project is written in C++.";
+}
+
+.card6::after {
+  content: "This was a group project for my AP Computer Science Class. "
+  "The game uses a statemanager class to switch between the various game states. "
+  "It uses a text file to determine the map design, and a sprite sheet for "
+  "character animations. All art and sound effects are custom made. "
+  "This project is written in Java."
+}
+
+
+.timeline ul li div time {
+  font-size: 12px;
+  float: right;
+  font-weight: 300;
+  padding-top: 6px;
 }
 
 @media screen and (max-width: 900px) {

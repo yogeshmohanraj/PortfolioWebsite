@@ -2,12 +2,13 @@
 // Adds a selected card class to cards that have been clicked
 function select_card(card_num) {
 	var cards = document.getElementsByClassName("card");
-		for (var i = 0; i < cards.length; i++) {
-			cards[i].classList.remove("selected_card")
-		}
-		cards[card_num - 1].className += " selected_card";
+	for (var i = 0; i < cards.length; i++) {
+		cards[i].classList.remove("selected_card");
+    cards[i].classList.remove("card" + (i + 1).toString());
+	}
+  cards[card_num - 1].className += " selected_card";
+  cards[card_num - 1].className += " card" + card_num.toString();
 }
-
 
 // Determines if object is visible, the adds the "in-view class"
 var items = document.querySelectorAll(".timeline li");
