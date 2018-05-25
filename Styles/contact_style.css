@@ -100,11 +100,80 @@ a:visited {
 }
 
 .form_container {
-	border-style: solid;
-	background-color: rgb(0, 0, 0, 0.7);
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
-input {
+form {
+	border-style: solid;
+	margin-top: 60px;
+	background-color: rgb(0, 0, 0, 0.6);
+	border-radius: 5px;
+	border-width: 2px;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	margin: 40px auto;
+	max-width: 700px;
+}
 
+.content {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	color: #FFD700;
+	font-size: 16px;
+}
+
+input[type=text] {
+	margin-top: 5px;
+	width: 100%;
+	border-radius: 4px;
+	border-style: solid;
+	border-color: #FFD700;
+	background-color: rgb(60, 60, 60);
+	box-sizing: border-box;
+	border-width: 1px;
+	height: 30px;
+	color: white;
+	font-size: 14px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.message {
+	margin-top: 5px;
+	width: 100%;
+	border-radius: 4px;
+	border-style: solid;
+	border-color: #FFD700;
+	background-color: rgb(60, 60, 60);
+	box-sizing: border-box;
+	border-width: 1px;
+	height: 30px;
+	color: white;
+	font-size: 14px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+input[type=submit] {
+	background-color: rgb(60, 60, 60);
+	color: #FFD700;
+	border-color: #FFD700;
+	font-size: 14px;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 4px;
+	width: 100px;
+}
+
+input[type=submit]:hover {
+    border-color: #FFA000;
+    color: #FFA000;
 }
 
