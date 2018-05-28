@@ -13,6 +13,8 @@ a:visited {
 
 .info_box_container {
 	padding-top: 70px;
+	padding-left: 40px;
+	padding-right: 40px;
 	text-align: center;
 	height: 100%;
 }
