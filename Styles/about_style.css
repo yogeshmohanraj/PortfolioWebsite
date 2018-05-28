@@ -1,0 +1,20 @@
+.title_container {
+	border-style: dotted;
+
+}
+
+.title {
+	margin: 30px auto;
+	width: 80%;
+	border-style: solid;
+	text-align: center;
+	font-family: 'Open Sans';
+	background-color: rgb(0, 0, 0, 0.7);
+	border-radius: 4px;
+	border-width: 2px;
+	font-size: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #F4F6F7;
+	border-color: black;
+}

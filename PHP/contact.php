@@ -1,0 +1,1 @@
+mail('yogeshmohanraj@gmail.com, $_POST['subject'], $_POST['message']);

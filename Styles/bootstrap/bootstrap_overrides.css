@@ -13,7 +13,16 @@
 	padding-right: 0px;
 }
 
-
 .top_nav .logo:hover {
 	text-decoration: none;
+}
+
+@media screen and (max-width: 625px) {
+	.logo {
+		width: 125px;
+		height: 80px;
+	}
+	.top_nav ul li {
+		margin-left: 20px;
+	}
 }

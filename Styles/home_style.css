@@ -8,19 +8,17 @@ body{
 	overflow-x: hidden;
 }
 
-/* Picture */
-.picture {
-	width: 760px;
+.picture_content {
+	max-width: 760px;
 	margin: auto;
-	margin-top: 45px;
+	margin-top: 60px;
 	margin-bottom: 30px;
 	position: relative;
 	font-family: thinFont;
-
 }
 
 /* clear fix */
-.picture::after {
+.picture_content::after {
 	content: "";
 	display: table;
 	clear: both;
@@ -46,6 +44,7 @@ body{
 }
 
 .tagline {
+	display: inline;
 	padding-left: 60px;
 	padding-right: 30px;
 	padding-top: 20px;
@@ -69,16 +68,24 @@ body{
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #F4F6F7;
-	background-color: #494949;
+	background-color: rgb(70, 70, 70);
 	font-size: 16px;
 	font-family: 'Open Sans';
-	border-style-bottom: solid
+	border-width: 3px;
+	border-bottom-style: solid;
+	border-color: #FFD700;
+}
+
+.description p {
+	max-width: 1000px;
+	margin: 20px auto;
 }
 
 /* Education */
 .education {
 	padding-top: 20px;
 	border-bottom-style: solid;
+	border-top-style: solid;
 	text-align: center;
 	margin-bottom: 0px;
 	font-family: thinFont;
@@ -87,14 +94,16 @@ body{
 	line-height: 30px;
 }
 
-/*Copyright*/
-.copyright {
-	background-color: rgb(0, 0, 0, 0.7);
-	border-color: #FFD700;
-	color: #F4F6F7;
-	border-top-style: solid;
-	line-height: 36px;	
-	font-size: 10px;
-	text-align: center;
-	padding-bottom: 1px;
+@media screen and (max-width: 750px) {
+	.tagline {
+		display: none;
+	}
+	.headshot {
+		margin: auto;
+		width: 100%;
+		text-align: center;
+	}
+	.headshot img {
+		margin-left: -40px;
+	}
 }
