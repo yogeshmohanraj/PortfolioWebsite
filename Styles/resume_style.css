@@ -59,8 +59,8 @@
 
 .card {
 	display: inline-block;
-	border-color: black;
-	border-width: 1px;
+	border-color: rgb(60, 60, 60, 0.4);
+	border-width: 3px;
 	border-radius: 6px;
 	max-width: 425px;
 }

@@ -48,6 +48,7 @@
 	border-right: solid;
 	border-color: black;
 	border-width: 4px;
+  cursor: pointer;
 }
 
 .timeline ul li::after {
@@ -259,7 +260,7 @@
   }
    
   .timeline ul li div {
-    width: calc(100vw - 150px);
+    width: calc(100vw - 160px);
   }
    
   .timeline ul li:nth-child(even) div {
